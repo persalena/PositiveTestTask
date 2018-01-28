@@ -8,17 +8,17 @@ namespace BLL.Models
 {
     public class HeroItem<T>:IHeroItem<T> where T : class
     {
-        private double _stateBonus;
-        private double _cost;
+        private int _stateBonus;
+        private int _cost;
 
-        public HeroItem(double minStateBonus, double maxStateBonus, double cost)
+        public HeroItem(int minStateBonus, int maxStateBonus, int cost)
         {
             var randomHelper = IoC.Instance.Resolve<IRandomHelper>();
-            this._stateBonus = randomHelper.GetRandomDouble(minStateBonus, maxStateBonus);
+            this._stateBonus = randomHelper.GetRandomInt(minStateBonus, maxStateBonus);
             this._cost = cost;
 
         }
-        public double Cost
+        public int Cost
         {
             get
             {
@@ -26,7 +26,7 @@ namespace BLL.Models
             }
         }
 
-        public double StateBonus
+        public int StateBonus
         {
             get
             {

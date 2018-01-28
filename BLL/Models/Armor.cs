@@ -6,7 +6,7 @@ namespace BLL.Models
 {
     public class Armor : HeroItem<Armor>
     {
-        public Armor(double minStateBonus, double maxStateBonus, double cost) : base(minStateBonus, maxStateBonus, cost)
+        public Armor(int minStateBonus, int maxStateBonus, int cost) : base(minStateBonus, maxStateBonus, cost)
         {
 
         }

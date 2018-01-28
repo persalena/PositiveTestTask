@@ -6,7 +6,7 @@ namespace BLL.Models
 {
     public interface IHeroItem<T> where T : class
     {
-        double Cost { get; }
-        double StateBonus { get; }
+        int Cost { get; }
+        int StateBonus { get; }
     }
 }

@@ -6,7 +6,7 @@ namespace BLL.Models
 {
     public class Weapon:HeroItem<Weapon>
     {
-        public Weapon(double minStateBonus, double maxStateBonus, double cost) : base(minStateBonus, maxStateBonus, cost)
+        public Weapon(int minStateBonus, int maxStateBonus, int cost) : base(minStateBonus, maxStateBonus, cost)
         {
 
         }

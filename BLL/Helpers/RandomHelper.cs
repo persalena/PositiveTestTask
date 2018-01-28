@@ -12,6 +12,12 @@ namespace BLL.Helpers
             return random.NextDouble() * (max - min) + min;
         }
 
+        public int GetRandomInt(int min, int max)
+        {
+            var random = new Random();
+            return random.Next(min, max);
+        }
+
         public bool IsSuccess(double probability)
         {
             var result = false;
